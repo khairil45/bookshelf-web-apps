@@ -1,0 +1,401 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1F1F1F;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+header h1 {
+    color: #fff;
+    background-color: rgb(52, 52, 52);
+    font-family: 'Bree Serif';
+    font-size: 35px;
+    font-weight: 200;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 12px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(128, 128, 128);
+    height: 60px;
+    top: 0;
+}
+
+.search {
+    width: 35%;
+}
+
+.search form {
+    width: 100%;
+}
+
+input[type=search] {
+    display: block;
+    border: none;
+    border-radius: 6px;
+    width: 100%;
+    padding: 12px 10px 10px 36px;
+    font-size: 15px;
+    background-color: rgb(215, 215, 215);
+    background-image: url("../assets/search.svg");
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    outline: none;
+}
+
+main {
+    max-width: 620px;
+    margin-top: 125px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 22px;
+}
+
+.input_section {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 2px 4px 8px 2px rgba(128, 128, 128, 0.2);
+    border: 1px solid rgb(128, 128, 128);
+    border-radius: 8px;
+}
+
+.input_section h2 {
+    color: #fff;
+    font-family: 'Bree Serif';
+    font-size: 25px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.input_section form .input {
+    margin: 10px 0;
+}
+
+.input_section form .input label{
+    color: #fff;
+    font-family: Arial;
+    font-size: 16px;
+}
+
+.input_section form button {
+    display: block;
+    color: white;
+    letter-spacing: 2px;
+    background-color: rgb(61, 61, 61);
+    border: 1px solid rgb(128, 128, 128);
+    border-radius: 18px;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.input_section form button span {
+    font-weight: bold;
+}
+
+input[type=hidden],[type=text],[type=number]{
+    display: block;
+    width: 100%;
+    font-family: Arial;
+    font-size: 15px;
+    padding: 10px 10px;
+    margin-top: 2px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(215, 215, 215);
+    outline: none;
+}
+
+article {
+    font-family: Arial;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.input_section form .input_inline {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input_section form .input_inline label {
+    color: #fff;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-right: 10px;
+}
+
+.book_shelf {
+    margin-top: 10px;
+    padding: 8px;
+    border: 1px solid rgb(128, 128, 128);
+    border-radius: 8px;
+    box-shadow: 2px 4px 8px 2px rgba(128, 128, 128, 0.2);
+}
+
+.book_shelf h2 {
+    color: #fff;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+.book_shelf .book_list label {
+    color: #fff;
+    font-family: Arial;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+.book_shelf > .book_list > .book_item {
+    display: flex;
+    align-items: center;
+    padding: 8px 5px 5px 16px;
+    border: 1px solid rgb(128, 128, 128);
+    border-radius: 5px;
+    background-color: rgb(30, 30, 30);
+    width: 98%;
+    margin: 10px;
+}
+
+.book_shelf .book_list .book_item h3, p {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.book_shelf .book_list .book_item .action {
+    margin-left: auto;
+}
+
+.book_shelf .book_list .book_item .action button {
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.form-title {
+    margin: auto 0;
+}
+
+.btn-check {
+    width: 40px;
+    height: 40px;
+    background: url('../assets/check.svg');
+    background-size: contain;
+    margin-right: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-update {
+    width: 40px;
+    height: 40px;
+    background: url('../assets/edit.svg');
+    background-size: contain;
+    margin-right: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-delete {
+    width: 40px;
+    height: 40px;
+    background: url('../assets/delete.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-undo {
+    width: 40px;
+    height: 40px;
+    background: url('../assets/undo.svg');
+    background-size: contain;
+    margin-right: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-check:hover {
+    background: url('../assets/check-fill.svg');
+    background-size: contain;
+    border: none;
+}
+
+.btn-update:hover {
+    background: url('../assets/edit-fill.svg');
+    background-size: contain;
+}
+
+.btn-delete:hover {
+    background: url('../assets/delete-fill.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.btn-undo:hover {
+    background: url('../assets/undo-fill.svg');
+    background-size: contain;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(215, 215, 215);
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 4px 8px 2px rgba(128, 128, 128, 0.2);
+}
+
+.wrapper .notifikasi-message {
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.addIcon {
+    width: 26px;
+    height: 26px;
+    background: url(../assets/add-fill.svg);
+    background-size: contain;
+    margin-right: 8px;
+}
+
+.searchIcon {
+    width: 20px;
+    height: 20px;
+    background: url(../assets/search.svg);
+    background-size: contain;
+    margin-right: 8px;
+}
+
+.checkIcon {
+    width: 26px;
+    height: 26px;
+    background: url(../assets/check-fill.svg);
+    background-size: contain;
+    margin-right: 8px;
+}
+
+.editIcon {
+    width: 26px;
+    height: 26px;
+    background: url(../assets/edit-fill.svg);
+    background-size: contain;
+    margin-right: 8px;
+}
+
+.deleteIcon {
+    width: 26px;
+    height: 26px;
+    background: url(../assets/delete-fill.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 8px;
+}
+
+.undoIcon {
+    width: 26px;
+    height: 26px;
+    background: url(../assets/undo-fill.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 8px;
+}
+
+footer {
+    background-color: rgb(61, 61, 61);;
+    padding: 5px;
+}
+
+footer p {
+    color: #1F1F1F;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 515px) {
+
+    header h1 {
+        font-size: 25px;
+    }
+    
+    nav {
+        height: 40px;
+    }
+    
+    .search {
+        width: 65%;
+    }
+
+    input[type=search] {
+        font-size: 12px;
+        border-radius: 15px;
+        padding: 10px 8px 6px 32px;
+        background-position: 6px 6px;
+    }
+
+    main {
+        max-width: 500px;
+        margin-top: 90px;
+    }
+
+    .input_section h2 {
+        font-size: 22px;
+    }
+
+    .book_shelf > .book_list > .book_item {
+        padding: 6px 4px 4px 15px;
+        width: 99%;
+        margin: 2px;
+    }
+
+    .book_shelf .book_list .book_item h3, p {
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        margin: 6px 0;
+    }
+
+    .btn-check, .btn-update, .btn-undo {
+        width: 30px;
+        height: 30px;
+        margin-right: 6px;
+    }
+    
+    .btn-delete {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@font-face{
+	font-family: "Bree Serif";
+	src: url('../font/Bree-Serif.ttf') format('truetype');
+}
